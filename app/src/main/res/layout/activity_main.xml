@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.verticallayouttextviewlib.VerticalLayoutTextView
+        android:id="@+id/vertical_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        app:customMaxHeight="216dp"
+        app:lineSpace="20dp"
+        app:maxLines="12"
+        app:normalCharPaddingTop="-3dp"
+        app:textColor="#FF423B2E"
+        app:textSize="14dp" />
+
+    <com.example.verticallayouttextviewlib.VerticalLayoutTextView
+        android:id="@+id/vertical_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vertical_text1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        app:customMaxHeight="350dp"
+        app:lineSpace="20dp"
+        app:maxLines="12"
+        app:needLeftLine="true"
+        app:needSepLine="true"
+        app:normalCharPaddingTop="-3dp"
+        app:textColor="#FF423B2E"
+        app:textSize="14dp" />
+</android.support.constraint.ConstraintLayout>
